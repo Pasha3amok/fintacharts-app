@@ -1,0 +1,9 @@
+<ng-template #customTooltip let-model="model">
+  <div class="chart-tooltip">
+    <p><strong>День:</strong> {{ model.name }}</p>
+    <p><strong>{{ model.series }}:</strong> {{ model.value }}</p>
+  </div>
+</ng-template>
+<ngx-charts-line-chart
+[results]="sampleData"
+></ngx-charts-line-chart>
